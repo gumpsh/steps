@@ -36,12 +36,8 @@ function App() {
           <p className="message">{messages[step - 1]}</p>
 
           <div className="buttons">
-            <button onClick={handlePrevious} style={{ backgroundColor: "#7950f2", color: "#fff" }}>
-              Previous
-            </button>
-            <button onClick={handlesNext} style={{ backgroundColor: "#7950f2", color: "#fff" }}>
-              Next
-            </button>
+            <button onClick={handlePrevious}>Previous</button>
+            <button onClick={handlesNext}>Next</button>
           </div>
         </div>
       )}
