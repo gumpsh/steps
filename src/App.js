@@ -11,14 +11,12 @@ function Steps() {
   const [isOpen, setIsOpen] = useState(true);
 
   function handlesNext() {
-    console.log("increment clicked");
     if (step < 3) {
       setStep((s) => s + 1);
     }
   }
 
   function handlePrevious() {
-    console.log("decrement clicked");
     if (step > 1) {
       setStep((s) => s - 1);
     }
