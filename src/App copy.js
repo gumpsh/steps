@@ -2,11 +2,7 @@ import { useState } from "react";
 
 const messages = ["Learn React ⚛️", "Apply for jobs 💼", "Invest your new income 🤑"];
 
-export default function App() {
-  return <Steps />;
-}
-
-function Steps() {
+function App() {
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
 
@@ -42,12 +38,8 @@ function Steps() {
           </p>
 
           <div className="buttons">
-            <Button onClick={handlePrevious}>
-              <span>👈</span> Previous
-            </Button>
-            <Button onClick={handlesNext}>
-              Next <span>👉</span>
-            </Button>
+            <button onClick={handlePrevious}>Previous</button>
+            <button onClick={handlesNext}>Next</button>
           </div>
         </div>
       )}
@@ -55,6 +47,4 @@ function Steps() {
   );
 }
 
-function Button({ onClick, children }) {
-  return <button onClick={onClick}>{children}</button>;
-}
+export default App;
